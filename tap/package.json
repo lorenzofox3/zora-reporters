@@ -1,0 +1,40 @@
+{
+  "name": "zora-tap-reporter",
+  "version": "2.0.0",
+  "description": "TAP reporters for zora testing library",
+  "main": "dist/index",
+  "module": "dist/module.js",
+  "types": "dist/declarations/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build:compile": "tsc",
+    "build:bundle": "rollup -c rollup.js",
+    "build": "npm run build:compile && npm run build:bundle",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "zora",
+    "tap",
+    "reporter",
+    "test",
+    "testing",
+    "bdd",
+    "unit",
+    "tool",
+    "productivity",
+    "browser",
+    "nodejs"
+  ],
+  "author": "Laurent RENARD",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^1.27.9",
+    "typescript": "^3.7.3",
+    "zora": "^3.1.6"
+  },
+  "files": [
+    "dist"
+  ]
+}

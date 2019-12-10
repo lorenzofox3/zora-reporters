@@ -1,0 +1,19 @@
+{
+  "name": "zora-reporters",
+  "description": "A set of reporters for zora's protocol",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorenzofox3/zora-reporters.git"
+  },
+  "author": "Laurent RENARD",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lorenzofox3/zora-reporters/issues"
+  },
+  "homepage": "https://github.com/lorenzofox3/zora-reporters#readme",
+  "devDependencies": {
+    "rollup": "^1.27.9",
+    "typescript": "^3.7.3",
+    "zora": "^3.1.6"
+  }
+}

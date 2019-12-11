@@ -1,6 +1,6 @@
 {
   "name": "zora-node-reporter",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "A reporter for zora which targets nodejs environment",
   "main": "dist/index",
   "types": "dist/declarations/index.d.ts",

@@ -14,4 +14,4 @@ Stringify zora's messages in the console. It is particularly useful if you want 
 
 Uses advanced console API to group and flag messages. Ideal to use in the browser which provides many way to interact with the console logs (filter, expand, etc)
 
- 
+![console report screenshot](./media/screen-shot.png) 

@@ -1,6 +1,6 @@
 {
   "name": "zora-console-reporter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "zora reporters which use the console API",
   "main": "dist/index",
   "module": "dist/index.mjs",

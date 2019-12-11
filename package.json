@@ -12,6 +12,7 @@
   },
   "homepage": "https://github.com/lorenzofox3/zora-reporters#readme",
   "devDependencies": {
+    "pta": "^0.1.2",
     "rollup": "^1.27.9",
     "typescript": "^3.7.3",
     "zora": "^3.1.6"

@@ -1,6 +1,7 @@
 import {AssertionResult, BailoutMessage, Message, MessageType, StartTestMessage, Test, TestEndMessage} from 'zora';
-import {flatten, isAssertionResult, stringifySymbol} from './util';
+import {flatten, stringifySymbol} from './util';
 import {Reporter} from './interfaces';
+import {isAssertionResult} from '../../common/util';
 
 // @ts-ignore
 const flatDiagnostic = ({pass, description, ...rest}) => rest;

@@ -1,5 +1,5 @@
-import { theme } from '../../node/theme';
-import { fakeKleur } from './util.js';
+import { theme } from '../src/theme';
+import { fakeKleur } from './util';
 export default (t) => {
     t.test(`theme.emphasis: bold && underline`, t => {
         t.ok(true);

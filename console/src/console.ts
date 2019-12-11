@@ -1,6 +1,6 @@
 import {Reporter} from '../../tap/src/interfaces';
 import {AssertionMessage, BailoutMessage, Message, MessageType, StartTestMessage, TestEndMessage} from 'zora';
-import {isAssertionResult} from '../../tap/src/util';
+import {isAssertionResult} from '../../common/util';
 
 const ConsoleReporter = {
     printComment(comment: string) {

@@ -3,7 +3,7 @@ import {EOL} from 'os';
 import {Output, output} from './output-stream';
 import {Message, MessageType, Reporter} from 'zora';
 import {paint} from './theme';
-import {isAssertionResult} from '../../tap/src/util';
+import {isAssertionResult} from '../../common/util';
 import {getDiagnosticReporter} from './diagnostic';
 
 const printHeader = (message: string, out: Output): void => {
@@ -45,7 +45,7 @@ const printFooter = (tests: Test[], out: Output) => {
     out.writeLine(`${EOL}`);
 };
 
-export const factory = (theme = paint, stream = process.stdout): Reporter => {
+export const reporter = (theme = paint, stream = process.stdout): Reporter => {
 
     const out = Object.assign(output(stream), theme, {
         width: stream.columns || 80

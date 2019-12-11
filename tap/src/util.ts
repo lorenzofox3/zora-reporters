@@ -1,4 +1,4 @@
-import {AssertionResult, Message, Test} from 'zora';
+import {Message} from 'zora';
 
 export const map = (fn: Function) => async function* (stream: AsyncIterable<Message<any>>) {
     for await (const m of stream) {
@@ -11,10 +11,6 @@ export const flatten = map((m: any) => {
     m.offset = 0;
     return m;
 });
-
-export const isAssertionResult = (result: Test | AssertionResult): result is AssertionResult => {
-    return 'operator' in result;
-};
 
 export const stringifySymbol = (key: string, value: Symbol) => {
     if (typeof value === 'symbol') {

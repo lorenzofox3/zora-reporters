@@ -1,6 +1,6 @@
 import {Tap, TapReporter} from './tap';
 import {AssertionMessage, AssertionResult, Message, MessageType, StartTestMessage, TestEndMessage} from 'zora';
-import {isAssertionResult} from './util';
+import {isAssertionResult} from '../../common/util';
 
 const indentedDiagnostic = ({expected, pass, description, actual, operator, at = 'N/A', ...rest}: AssertionResult) => ({
     wanted: expected,

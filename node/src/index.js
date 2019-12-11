@@ -1,9 +1,9 @@
-import { test } from './test.js';
+import { test } from './test';
 import { EOL } from 'os';
-import { output } from './output-stream.js';
-import { paint } from './theme.js';
-import { isAssertionResult } from '../../tap/src/util.js';
-import { getDiagnosticReporter } from './diagnostic.js';
+import { output } from './output-stream';
+import { paint } from './theme';
+import { isAssertionResult } from '../../common/util';
+import { getDiagnosticReporter } from './diagnostic';
 const printHeader = (message, out) => {
     const header = message.toUpperCase();
     out.writeBlock(out.emphasis(header), 1);
@@ -35,7 +35,7 @@ const printFooter = (tests, out) => {
     out.writeLine(paint.summaryFail(failure), 1);
     out.writeLine(`${EOL}`);
 };
-export const factory = (theme = paint, stream = process.stdout) => {
+export const reporter = (theme = paint, stream = process.stdout) => {
     const out = Object.assign(output(stream), theme, {
         width: stream.columns || 80
     });

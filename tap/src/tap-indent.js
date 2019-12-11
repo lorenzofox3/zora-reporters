@@ -1,5 +1,5 @@
 import { Tap } from './tap';
-import { isAssertionResult } from './util';
+import { isAssertionResult } from '../../common/util';
 const indentedDiagnostic = ({ expected, pass, description, actual, operator, at = 'N/A', ...rest }) => ({
     wanted: expected,
     found: actual,

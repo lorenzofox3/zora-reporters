@@ -1,0 +1,33 @@
+{
+  "name": "zora-console-reporter",
+  "version": "0.0.1",
+  "description": "zora reporters which use the console API",
+  "main": "dist/index",
+  "module": "dist/index.mjs",
+  "types": "dist/declarations/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "../node_modules/.bin/pta",
+    "build:compile": "../node_modules/.bin/tsc",
+    "build:bundle": "../node_modules/.bin/rollup -c rollup.js",
+    "build": "npm run build:compile && npm run build:bundle",
+    "build:test": "../node_modules/.bin/tsc --build test/tsconfig.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "zora",
+    "reporter",
+    "test",
+    "testing",
+    "console",
+    "tool",
+    "unit"
+  ],
+  "author": "Laurent RENARD",
+  "license": "MIT",
+  "devDependencies": {}
+}

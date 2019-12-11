@@ -1,4 +1,4 @@
-import * as kleur from 'kleur';
+import kleur from 'kleur';
 export const theme = ({ bgGreen, bgRed, bgYellow, green, red, cyan, gray, yellow, bold, underline } = kleur) => ({
     emphasis(message) {
         return underline().bold(message);

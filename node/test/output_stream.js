@@ -1,5 +1,5 @@
-import { stubFn } from './util.js';
-import { delegate, output } from '../../node/output-stream';
+import { stubFn } from './util';
+import { delegate, output } from '../src/output-stream';
 import { EOL } from 'os';
 export default ({ test }) => {
     test(`delegate`, t => {

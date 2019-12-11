@@ -1,5 +1,5 @@
-import { countPadding, expandNewLines, getDiagnosticReporter, valToTypeString } from '../../node/diagnostic';
-import { stubFn } from './util.js';
+import { countPadding, expandNewLines, getDiagnosticReporter, valToTypeString } from '../src/diagnostic';
+import { stubFn } from './util';
 import { EOL } from 'os';
 const theme = [
     'emphasis',

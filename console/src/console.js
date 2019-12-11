@@ -1,4 +1,4 @@
-import { isAssertionResult } from '../../tap/src/util.js';
+import { isAssertionResult } from '../../common/util';
 const ConsoleReporter = {
     printComment(comment) {
         this.logger.log(comment);

@@ -1,4 +1,4 @@
-import { test } from '../../node/test';
+import { test } from '../src/test';
 export default (t) => {
     t.test(`factory should init an instance`, t => {
         //@ts-ignore

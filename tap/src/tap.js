@@ -1,4 +1,5 @@
-import { flatten, isAssertionResult, stringifySymbol } from './util';
+import { flatten, stringifySymbol } from './util';
+import { isAssertionResult } from '../../common/util';
 // @ts-ignore
 const flatDiagnostic = ({ pass, description, ...rest }) => rest;
 export const Tap = {

@@ -1,4 +1,4 @@
-import {stubFn} from './util.js';
+import {stubFn} from './util';
 import {delegate, output} from '../src/output-stream';
 import {EOL} from 'os';
 import {Assert} from 'zora';

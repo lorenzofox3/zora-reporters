@@ -1,4 +1,4 @@
-import { rawReporter } from '../../src';
+import { rawReporter } from '../src';
 const fakeOutputStream = () => {
     const buffer = [];
     return {

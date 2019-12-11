@@ -1,4 +1,4 @@
-import {rawReporter} from '../../src';
+import {rawReporter} from '../src';
 import {Assert} from 'zora';
 
 const fakeOutputStream = () => {

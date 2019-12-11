@@ -1,4 +1,3 @@
-import {WriteStream} from 'tty';
 import {AssertionResult} from 'zora';
 import {Output} from './output-stream';
 

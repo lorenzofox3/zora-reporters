@@ -11,7 +11,9 @@
   "scripts": {
     "build:compile": "../node_modules/.bin/tsc",
     "build:bundle": "../node_modules/.bin/rollup -c rollup.js",
-    "build": "npm run build:compile && npm run build:bundle"
+    "build": "npm run build:compile && npm run build:bundle",
+    "update-test-suite": "node scripts/download-zora-tests.js",
+    "test": "node ./test/samples/index.js"
   },
   "keywords": [
     "zora",
@@ -30,5 +32,8 @@
   "license": "MIT",
   "files": [
     "dist"
-  ]
+  ],
+  "devDependencies": {
+    "tape": "^4.11.0"
+  }
 }

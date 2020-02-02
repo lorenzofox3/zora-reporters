@@ -19,13 +19,7 @@ const ConsoleReporter = {
             if (message.data.pass) {
                 this.logger.log(message.data.description);
             } else {
-                const {at: location, expected, actual} = message.data;
-                const parts = location.split('/');
-                let pathIndex = parts.findIndex((p: string) => p.includes('localhost'));
-                const filePath = parts.slice(pathIndex + 1);
-                // todo
-                // const url = new URL(filePath.join('/'), typeof window !== 'undefined' ? window.location.origin : process.cwd());
-                // this.logger.error(url.href);
+                const {expected, actual} = message.data;
                 this.logger.table({expected, actual});
             }
         } else if (message.data.skip) {
